@@ -1,0 +1,66 @@
+body {
+  background-color: #263238;
+  color: #ddd;
+  font-family: courier, monospace;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 14pt;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.minesweeper-board {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
+.minesweeper-board tr td {
+  border: 1px solid #fff;
+  background-color: #999;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  transition: background 0.2s;
+  font-size: 15px;
+  padding: 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.minesweeper-board tr td.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.minesweeper-board tr td.mine {
+  background-color: #d84315;
+  color: #fff;
+}
+
+.minesweeper-board tr td:active {
+  outline: 1px solid #fff;
+}
+
+button {
+  margin: 12px 0;
+  padding: 4px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #d84315;
+  color: #fff;
+  font-family: courier, monospace;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #b71c1c;
+}
